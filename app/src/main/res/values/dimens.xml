@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="cardViewPadding">15dp</dimen>
+    <dimen name="marginImagePropic">20dp</dimen>
+    <dimen name="marginButton">30dp</dimen>
+    <dimen name="margintopCard">5dp</dimen>
+    <dimen name="margintopleftRight">3dp</dimen>
+    <dimen name="card_eveation_price">1dp</dimen>
+    <dimen name="offerb_low_padding">1dp</dimen>
+    <dimen name="offerb_titlepaddinglf">10dp</dimen>
+
+    <dimen name="viewPager_height">200dp</dimen>
+    <dimen name="tintIconWidthHeight">40dp</dimen>
+    <dimen name="navigation_headerHeight">60dp</dimen>
+
+    <dimen name="animouterCircle">100dp</dimen>
+    <dimen name="animinnerCircle">80dp</dimen>
+    <dimen name="marginTopOfferTitle">20dp</dimen>
+
+    <dimen name="shoplogo_height">100dp</dimen>
+
+    <!--Font sizes-->
+    <dimen name="text_size_small_time">10sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+    <dimen name="text_size_grid_small_time">10sp</dimen>
+    <dimen name="text_size_grid_small">15sp</dimen>
+    <dimen name="text_size_grid_medium">18sp</dimen>
+    <dimen name="text_size_grid_large">22sp</dimen>
+    <dimen name="text_size_xtiny">12sp</dimen>
+
+    <!--dimen for preferences-->
+    <dimen name="tintIconPrefWidthHeight">20dp</dimen>
+    <dimen name="margin_padding_small">9dp</dimen>
+
+
+    <!--Floating spinner values-->
+    <dimen name="underline_top_spacing">8dp</dimen>
+    <dimen name="underline_bottom_spacing">4dp</dimen>
+    <dimen name="error_label_spacing">12dp</dimen>
+
+    <dimen name="floating_label_top_spacing">4dp</dimen>
+    <dimen name="floating_label_bottom_spacing">8dp</dimen>
+    <dimen name="floating_label_inside_spacing">12dp</dimen>
+
+    <dimen name="right_left_spinner_padding">8dp</dimen>
+    <dimen name="label_text_size">12sp</dimen>
+    <dimen name="min_content_height">20dp</dimen>
+
+
+    <dimen name="headerTextSize">28sp</dimen>
+
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
+</resources>

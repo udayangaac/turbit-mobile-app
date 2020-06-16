@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragements.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/headerText"
+                android:text="Account Info"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/address_24"
+                    app:startIconTint="@color/primary"
+                    android:hint="Address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addressInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dobInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/age_26"
+                    app:startIconTint="@color/primary"
+                    android:hint="Date of Birth">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dobInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <LinearLayout style="@style/profileDetailsLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Gender"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/genderMaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/genderFemaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/radioGroup1"
+                        android:layout_below="@+id/radioGroup1"
+                        android:text="Female"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout style="@style/profileDetailsLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="I am "/>
+                <RadioGroup
+                    android:id="@+id/radio_group_employee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/employeeYesRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/employeeNoRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/radioGroup1"
+                        android:layout_below="@+id/radioGroup1"
+                        android:text="Not Employee"/>
+                </RadioGroup>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/companyInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/company_24"
+                    app:startIconTint="@color/primary"
+                    android:hint="Company Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/companyInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/companyLocationInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/location_24"
+                    app:startIconTint="@color/primary"
+                    android:hint="Location">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/companyLocationInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/profileDetailsLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Marital Status"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_marital_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maritalSingleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/maritalMarriedRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/radioGroup1"
+                        android:layout_below="@+id/radioGroup1"
+                        android:text="Married"/>
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kidsInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/christmas_kid_24"
+                    app:startIconTint="@color/primary"
+                    android:visibility="gone"
+                    android:hint="Kids">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/kidsInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:inputType="number"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/updateDetailsButton"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFF"
+                android:background="@drawable/rec_gradient_fb"
+                android:textAllCaps="false"
+                android:text="Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

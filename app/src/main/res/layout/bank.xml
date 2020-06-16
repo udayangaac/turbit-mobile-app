@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.manitaz.turbit.ui.custom.SquareImageView
+
+        android:id="@+id/thumbImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop" />
+
+    <CheckBox
+        android:id="@+id/itemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/bank_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:singleLine="true"
+        android:text="" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light" />
+
+
+</RelativeLayout>
